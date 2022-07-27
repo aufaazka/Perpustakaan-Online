@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="styleFromBuku.css"> 
+    <script src="https://kit.fontawesome.com/20d637e8c5.js" crossorigin="anonymous"></script>
+    <title>Formulir Peminjaman Buku</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header">
+        <a href="login.html"><i class="fa-solid fa-user"></i>  login</a> 
+    </div>
+</header>
+
+  <!-- Nav -->
+  <div class="nav">
+    <a href="#default" class="logo"><img src="https://pbs.twimg.com/media/FWol3U8UsAACOAz?format=png&name=medium" alt="Image" style="width:300px;"></a>
+    <div class="nav-right">
+      <a href="home.html">Home</a>
+      <a href="buku.html">Katalog</a>
+      <a href="fromBuku.html">Peminjaman Buku</a>
+      <a href="#cari">Telusuri  <i class="fa-solid fa-magnifying-glass"></i></a> 
+    </div>
+  </div>
+  
+  <!-- content -->
+  <section> 
+    <article>
+      <h3 class="kontakAwal">Formulir Peminjaman Buku </h3><br>
+        <div class="container">
+          <form>
+            <!-- Genre -->
+            <label for="Genre">Genre Buku</label>
+            <select id="Genre" name="Genre">
+              <option value="Majalah">Majalah</option>
+              <option value="Olahraga">Olahraga</option>
+              <option value="Teknologi">Teknologi</option>
+            </select>
+
+            <!-- Buku -->
+            <label for="bname">Judul Buku</label>
+            <select id="bname" name="bname">
+              <option value="PNI dan Alhi Warisnya">PNI dan Ahli Warisnya</option>
+              <option value="Mudahnya Memaafkan">Mudahnya Memaafkan</option>
+              <option value="Creamy Seafood">Creamy Seafood</option>
+              <option value="Aturan Balita">Aturan Balita</option>
+              <option value="Fashion and Art">Fashion and Art</option>
+              <option value="Jago Futsal">Jago Futsal</option>
+              <option value="Jago Bulu Tangkis">Jago Bulu Tangkis</option>
+              <option value="Jago Renang">Efek Vonis Ahok</option>
+              <option value="Panduan Hatha Yoga">Panduan Hatha Yoga</option>
+              <option value="Bermain Kasti">Bermain Kasti</option>
+              <option value="Belajar Microsoft office">Belajar Microsoft office</option>
+              <option value="Indonesia Menuju 5g">Indonesia Menuju 5g</option>
+              <option value="Teknologi Informatika, Komunikasi">Teknologi Informatika, Komunikasi</option>
+              <option value="Teknologi Pembangkit Listrik">Teknologi Pembangkit Listrik</option>
+              <option value="Prinsip Dasar Satelit">Prinsip Dasar Satelit</option>
+              <option value="Teknologi Layanan Jaringan">Teknologi Layanan Jaringan</option>              
+            </select>
+            
+            <!-- Peminjam -->
+            <label for="pname">Nama Peminjam</label>
+            <input type="text" id="pname" name="namapeminjam" placeholder="Nama lengkap!">
+            
+            <!-- Tgl Peminjaman -->
+            <label for="pdate">Tanggal peminjaman</label>
+            <input type="date" id="pdate" name="kdate"><br><br>
+
+            <!-- Tgl Pengembalian -->
+            <label for="kdate">Tanggal Pengembalian</label>
+            <input type="date" id="kdate" name="kdate"><br><br>
+            <!-- Button Kirim -->
+            <input type="button" value="Kirim" onclick="AddRow()">
+        </div> 
+      </form>
+    </article>
+  </section>
+
+  <!-- Table Data Peminjaman -->
+  <div class="box">
+    <table id="show">
+      <tr>
+          <th>Genre</th>
+          <th>Judul buku</th>
+          <th>Nama Peminjam</th>
+          <th>Tangga Pinjam</th>
+          <th>Tanggal Kembali</th>
+      </tr>
+    </table>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <p>Perpustakaan Indonesia Jaya || Kelompok 1 TEFA SMK Telkom Malang </p>
+    </div>
+  </footer>
+
+  <script src="script-formBuku.js"></script> 
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleKaryawan.css">
+    <title>Login Page</title>
+</head>
+<body id="login-body">
+
+    <!-- Pembungkus -->
+<div class="login-container">
+    <div class="forms-login">
+        <div class="form-login">
+
+            <!-- logo -->
+            <div class="logo"><img src="https://pbs.twimg.com/media/FWpNnOdUsAI6bCh?format=png&name=small" alt="Logo.jpg"></div>
+            <!-- kolom -->
+            <form id="form-field">
+                <div class="input-field">
+                    <input type="text" id="log-user" placeholder="Username" required>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="pass-up" id="log-pass" placeholder="Password" required>
+                    <ion-icon class="icon-login" name="lock-closed-outline"></ion-icon>
+                    <ion-icon class="icon-eye" name="eye-off-outline"></ion-icon>
+                </div>
+                <!-- button -->
+                <div class="input-field button">
+                    <input type="button" value="Login" onclick="login()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script type="text/Javascript"src="script-login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
